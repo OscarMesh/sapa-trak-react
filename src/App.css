@@ -1,38 +1,365 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap');
+
+
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("SAPA.jpg");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 28px;
+  background: rgba(228, 228, 228, 0.35);
+  margin-top: 125px;
+  margin-bottom: 125px;
+}
+
+.header {
+  align-items: center;
+  padding: 10px 150px;
+  background: linear-gradient(
+    270deg,
+    rgba(72, 134, 228, 0.685982) 0%,
+    rgba(72, 134, 228, 0.099667) 20.93%,
+    #4886e4 48.87%,
+    rgba(72, 134, 228, 0) 100%
+  );
+}
+
+.header h1 {
   text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4886e4;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+}
+.header h1 span {
+  color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.balance {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 35px;
+  justify-content: space-between;
+  background: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.balance p,
+#balance {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.balance .amt {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inc-exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 23px;
+  background: #ffffff;
+}
+.inc-exp .inc .exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+.inc {
+  padding-left: 23px;
+}
+.exp {
+  padding-right: 23px;
+}
+.inc-exp p {
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+   color: #000000;
+}
+
+#income {
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: green;
+}
+.inc-exp .exp #expenses {
+  color: #6a0000;
+}
+.inc-exp .amt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  background: linear-gradient(
+    270deg,
+    #4886e4 11.18%,
+    rgba(72, 134, 228, 0.326952) 20.6%,
+    rgba(72, 134, 228, 0.724789) 65.76%,
+    rgba(72, 134, 228, 0) 97.29%
+  );
+}
+
+/* transation history */
+#transactions {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px 35px;
+}
+
+#transactions li {
+  display: flex;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #4886e4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+  background: #ffffff;
+  margin-bottom: 12px;
+}
+
+#transactions li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#transactions img:hover {
+  background: #6a0000;
+  padding: 5px;
+}
+#transactions li .income-amt {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: green;
+  padding: 5px;
+  color: #ffffff;
+}
+
+#transactions li .expense-amt {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: #6a0000;
+  padding: 5px;
+  color: #ffffff;
+}
+ p{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 18px;
+ }
+/* 
+.gig {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+  gap: 10px;
+  background: #ffffff;
+}
+
+.gig .amt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+  gap: 10px;
+  background: #ffffff;
+}
+.shop .amt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.gig p,
+ .income-amt {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.shop p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.shop .amt .expense-amt {
+  color: #6a0000;
+} */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 35px;
+  gap: 12px;
+  background: #ffffff;
+}
+.form label {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.form .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+
+.form input {
+  width: 100%;
+  height: 50px;
+
+  border: 2px solid #dadada;
+}
+
+.form .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+
+.buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#add-inc {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 28px;
+  color: #ffffff;
+  padding: 20px 35px;
+  width: 100%;
+  border: none;
+  background: linear-gradient(
+    270deg,
+    #4886e4 11.18%,
+    rgba(72, 134, 228, 0.326952) 20.6%,
+    rgba(72, 134, 228, 0.724789) 65.76%,
+    rgba(72, 134, 228, 0) 97.29%
+  );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#add-exp {
+  padding: 20px 35px;
+  width: 100%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 28px;
+  color: #ffffff;
+
+  border: none;
+  background: linear-gradient(
+    270deg,
+    #eb4a4a 11.18%,
+    rgba(235, 74, 74, 0.326952) 20.6%,
+    rgba(235, 74, 74, 0.724789) 65.76%,
+    rgba(235, 74, 74, 0) 97.29%
+  );
 }
