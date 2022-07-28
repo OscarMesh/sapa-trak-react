@@ -5,7 +5,7 @@ export const IncomeExpences = () => {
     <div className="inc-exp">
       <div className="inc">
         <p>Income</p>
-        <div class="amt">
+        <div className="amt">
           <span id="income">#30,000</span>
         </div>
       </div>

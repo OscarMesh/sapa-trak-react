@@ -1,8 +1,10 @@
 
 import './App.css';
+import { AddTransaction } from './component/AddTransaction';
 import  { Balance } from './component/Balance';
 import { Header } from './component/Header';
 import{ IncomeExpences } from './component/IncomeExpences';
+import { TransactionList } from './component/TransactionList';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header />
         <Balance />
         <IncomeExpences />
+        <TransactionList />
+        <AddTransaction />
       </div>
 
     
