@@ -10,7 +10,7 @@ export const Transaction = ({ transaction }) => {
       <div>
         <span
           className={
-            (transaction.type == "expense" ? "expense-amt" : "income-amt")
+            (transaction.type === "expense" ? "expense-amt" : "income-amt")
           }
         >
           {transaction.amount}

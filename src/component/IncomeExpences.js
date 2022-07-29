@@ -1,6 +1,10 @@
-import React from 'react'; 
-import rectangle from '../rectangle.svg';
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
+import rectangle from "../rectangle.svg";
+
 export const IncomeExpences = () => {
+  const { transactions } = useContext(GlobalContext);
+  
   return (
     <div className="inc-exp">
       <div className="inc">
@@ -18,6 +22,6 @@ export const IncomeExpences = () => {
       </div>
     </div>
   );
-}
+};
 
 export default IncomeExpences;
