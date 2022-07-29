@@ -188,7 +188,7 @@ ul img:hover {
   background: #6a0000;
   padding: 5px;
 }
-li .income-amt {
+ .income-amt {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
@@ -199,7 +199,7 @@ li .income-amt {
   color: #ffffff;
 }
 
- li .expense-amt {
+  .expense-amt {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
